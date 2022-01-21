@@ -1,0 +1,15 @@
+/*-------- Input --------*/
+
+.input-wrapper {
+    
+}
+
+.input {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
