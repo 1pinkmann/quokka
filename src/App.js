@@ -3,6 +3,9 @@ import NotificationProvider from './contexts/NotificationProvider';
 import Select from './components/common/Select';
 
 import netflixIcon from "./images/icons/netflix.svg";
+import Statistics from './components/Statistics';
+import Invest from './components/Invest';
+import Claim from './components/Claim';
 
 const selectItems = [
     { title: "Netflix Inc.", id: 0, selected: true },
@@ -22,7 +25,7 @@ export default function App() {
                         <Select className="select--main" list={selectItems} />
                     </div>
                     <div className="main__column main__column--2 main__column--top">
-                        <div className="main__wrapper main__wrapper--top">
+                        <div className="main__background main__background--top">
                             <div className="main__selected">
                                 <img src={netflixIcon} className="main__selected-icon" alt="netflix" />
                                 <p className="main__selected-text">Netflix Inc.</p>
@@ -32,6 +35,15 @@ export default function App() {
                                 <p className="main__status-text">Accepting Investments</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="main__wrapper">
+                    <div className="main__column main__column--1 main__background">
+                        <Statistics />
+                    </div>
+                    <div className="main__column main__column--2">
+                        <Invest />
+                        <Claim />
                     </div>
                 </div>
             </main>

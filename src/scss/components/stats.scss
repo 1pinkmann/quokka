@@ -1,0 +1,77 @@
+/*-------- Stats --------*/
+
+.stats {
+
+    &__title {
+        font-size: 20px;
+        font-family: $font-b;
+    }
+
+    &__title--small {
+        font-size: 16px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__goto {
+        color: #ffffff;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__text--date {
+        display: block;
+        margin-top: 8px;
+    }
+
+    &__section:not(:first-child) {
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid rgba(232, 232, 232, 0.3);
+    }
+
+    &__progress:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    &__progress-bar {
+        height: 8px;
+        margin-top: 12px;
+        background-color: #ffffff;
+    }
+
+    &__progress-track {
+        display: block;
+        height: 100%;
+        background-color: $blue;
+    }
+
+    &__progress-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    &__progress-text {
+        font-size: 16px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    &__text--value {
+        color: #ffffff;
+    }
+}

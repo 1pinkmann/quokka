@@ -2,8 +2,9 @@
 
 .main {
     padding-top: 40px;
+    padding-bottom: 45px;
 
-    &__wrapper {
+    &__background {
         padding: 24px;
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(232, 232, 232, 0.3);
@@ -11,7 +12,7 @@
         border-radius: 20px;
     }
 
-    &__wrapper--top {
+    &__background--top {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -33,6 +34,7 @@
         justify-content: space-between;
 
         height: 100px;
+        margin-bottom: 40px;
     }
 
     &__column--top {
@@ -63,5 +65,9 @@
         margin-top: 6px;
         font-size: 16px;
         color: $blue;
+    }
+
+    &__wrapper {
+        display: flex;
     }
 }

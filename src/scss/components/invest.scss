@@ -1,0 +1,68 @@
+/*-------- Input --------*/
+
+.input-wrapper {
+
+    &--staking {
+        display: flex;
+        height: 60px;
+
+        position: relative;
+        overflow: hidden;
+
+        border-radius: 8px;
+        border: 1px solid #39393C;
+    }
+
+    &--staking &__input {
+        width: 79%;
+
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+        border: none;
+
+        font-family: $font-r;
+        font-size: 16px;
+    }
+
+    &--staking &__row {
+        width: 67%;
+        padding: 0 20px;
+    }
+
+    &--staking &__max {
+        margin-left: auto;
+
+        font-family: $font-r;
+        font-size: 16px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    &--staking &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 33%;
+        margin-left: auto;
+
+        background: #39393C;
+
+        font-family: $font-r;
+        font-size: 14px;
+        color: #ffffff;
+    }
+}
+
+.input {
+    padding: 6px 11px;
+
+    background: #202226;
+    border: 1px solid #484545;
+    border-radius: 8px;
+
+    font-family: $font-r;
+    font-size: 18px;
+    color: #ffffff;
+}
