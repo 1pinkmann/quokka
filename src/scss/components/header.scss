@@ -58,3 +58,66 @@
         display: block;
     }
 }
+
+@media (max-width: 989px) {
+
+    .header {
+        background: #182230;
+        box-shadow: 0px 12px 20px rgba(63, 75, 99, 0.12);
+        border: none;
+    }
+}
+
+@media (max-width: 619px) {
+
+    .header {
+
+        &__account {
+            max-width: 50%;
+            margin-right: 10px;
+        }
+
+        &__account-row {
+            max-width: 100%;
+        }
+
+        &__account-row:nth-child(1) {
+            margin-bottom: 4px;
+        }
+
+        &__account-icon {
+            flex-shrink: 0;
+            margin-right: 8px;
+            width: 14px;
+            height: auto;
+        }
+
+        &__account-address {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 12px;
+        }
+
+        &__account-title {
+            font-size: 10px;
+        }
+
+        &__disconnect {
+            width: 20px;
+        }
+
+        &__disconnect-icon {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+
+    .header {
+        
+        &__wrapper {
+            height: 70px;
+        }
+    }
+}

@@ -1,10 +1,10 @@
 
 import Goto from './../Icons/Goto';
 
-export default function Statistics() {
+export default function Statistics({ ...props }) {
 
     return (
-        <ul className="stats">
+        <ul className="stats main__background" {...props}>
             <li className="stats__section">
                 <div className="stats__row">
                     <h3 className="stats__title stats__title--main">Statistics</h3>

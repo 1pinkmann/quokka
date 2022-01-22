@@ -20,11 +20,17 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        border: 1px solid transparent;
 
-        border: 1px solid #2F9FF4;
         border-radius: 20px;
 
         z-index: 2;
+
+        transition: border-color 0.2s ease-out;
+    }
+
+    &.opened &__button {
+        border-color:#2F9FF4;
     }
 
     &__button-icon {
@@ -93,6 +99,10 @@
         line-height: 1.1;
     }
 
+    &__item-button:hover {
+        text-decoration: underline;
+    }
+
     &__item-button:after {
         content: "";
 
@@ -129,6 +139,53 @@
 
         &__list-wrapper {
             padding-right: 24px;
+        }
+    }
+}
+
+@media (max-width: 989px) {
+
+    .select {
+
+        &--main {
+            height: 72px;
+        }
+
+        &--main &__button {
+            padding: 0 15px;
+        }
+
+        &__list-wrapper {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &--main:not(.scroll-visible) &__list-wrapper {
+            padding-right: 15px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+
+    .select {
+
+        &--main &__button {
+            font-size: 16px;
+        }
+
+        &--main &__item-button {
+            min-height: 42px;
+            font-size: 12px;
+        }
+
+        &--main &__item-button:after {
+            width: 16px;
+            height: 16px;
+        }
+
+        &--main &__list-wrapper {
+            padding-bottom: 8px;
         }
     }
 }

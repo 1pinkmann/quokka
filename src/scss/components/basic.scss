@@ -103,7 +103,12 @@ input[type="number"] {
 }
 
 @media (max-width: 479px) {
+
     .container {
         padding: 0 12px;
+    }
+
+    .logo {
+        width: 28px;
     }
 }

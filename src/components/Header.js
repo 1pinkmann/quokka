@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { NotificationContext } from '../contexts/NotificationProvider';
 import Disconnect from './../Icons/Disconnect';
 
-export default function Header() {
+export default function Header({ popupVisible, setPopupVisible }) {
     const { setNotification } = useContext(NotificationContext);
 
     function handleCopy() {
@@ -19,7 +19,7 @@ export default function Header() {
                 <a href="/" className="logo header__logo">
                     <Logo className="logo__icon" />
                 </a>
-                <button className="button button--header header__button">Connect Wallet</button>
+                <button className={"button button--header header__button" + (popupVisible ? " active" : "")} onClick={() => setPopupVisible(true)}>Connect Wallet</button>
                 <div className="header__account" style={{ display: "none" }}>
                     <div className="header__account-row">
                         <Wallet className="header__account-icon" />

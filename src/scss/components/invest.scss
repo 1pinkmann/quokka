@@ -1,68 +1,46 @@
-/*-------- Input --------*/
+/*-------- Invest --------*/
 
-.input-wrapper {
+.invest {
+    padding-bottom: 38px;
 
-    &--staking {
+    &__buttons {
         display: flex;
-        height: 60px;
-
-        position: relative;
-        overflow: hidden;
-
-        border-radius: 8px;
-        border: 1px solid #39393C;
+        justify-content: space-between;
+        margin-top: 24px;
     }
 
-    &--staking &__input {
-        width: 79%;
-
-        padding: 0;
-        border-radius: 0;
-        background-color: transparent;
-        border: none;
-
-        font-family: $font-r;
-        font-size: 16px;
-    }
-
-    &--staking &__row {
-        width: 67%;
-        padding: 0 20px;
-    }
-
-    &--staking &__max {
-        margin-left: auto;
-
-        font-family: $font-r;
-        font-size: 16px;
-        color: #ffffff;
-        text-transform: uppercase;
-    }
-
-    &--staking &__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        width: 33%;
-        margin-left: auto;
-
-        background: #39393C;
-
-        font-family: $font-r;
-        font-size: 14px;
-        color: #ffffff;
+    &__button {
+        width: 49%;
     }
 }
 
-.input {
-    padding: 6px 11px;
+@media (max-width: 989px) {
 
-    background: #202226;
-    border: 1px solid #484545;
-    border-radius: 8px;
+    .invest {
+        width: 100%;
+    }
+}
 
-    font-family: $font-r;
-    font-size: 18px;
-    color: #ffffff;
+@media (max-width: 619px) {
+
+    .invest {
+
+        &__button {
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+
+    .invest {
+        padding: 32px 16px;
+
+        &__button {
+            width: 48%;
+            height: 48px;
+            font-size: 14px;
+        }
+    }
 }
