@@ -62,6 +62,13 @@
 @media (max-width: 989px) {
 
     .header {
+        width: 100%;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+
         background: #182230;
         box-shadow: 0px 12px 20px rgba(63, 75, 99, 0.12);
         border: none;

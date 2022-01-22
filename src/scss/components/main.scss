@@ -90,6 +90,8 @@
 @media (max-width: 989px) {
 
     .main {
+        padding-top: 130px;
+        padding-bottom: 130px;
 
         &__top {
             flex-direction: column;
@@ -129,8 +131,8 @@
 @media (max-width: 479px) {
 
     .main {
-        padding-top: 24px;
-        padding-bottom: 32px;
+        padding-top: 94px;
+        padding-bottom: 102px;
 
         &__background--top {
             padding-top: 12px;
