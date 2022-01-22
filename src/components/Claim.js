@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Claim({ ...props }) {
     return (
         <div className="claim" {...props}>
